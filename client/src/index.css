@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+/* Small helper styles for resume preview */
+.resume-container { background: white; padding: 24px; box-shadow: 0 0 0 1px rgba(0,0,0,0.04); }
+.template-classic { color: #111827; }
+.template-modern { color: #0f172a; }
+.template-blue { --accent:#0ea5e9 }
+.template-dark { background: #1f2937; color: white }
+
+/* Form input helper */
+.input { padding: 0.5rem 0.75rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; background: white }
+.input:focus { outline: 2px solid rgba(59,130,246,0.3); }
+
+/* Small template tweaks */
+.template-two-column { display: block }
+.template-minimal { color: #111827 }
