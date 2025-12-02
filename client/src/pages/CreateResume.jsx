@@ -7,15 +7,28 @@ const emptyEducation = () => ({ id: Date.now() + Math.random(), degree:'', insti
 export default function CreateResume(){
   const navigate = useNavigate()
   const [data, setData] = useState(() => {
-    try{ return JSON.parse(localStorage.getItem('resume:draft')) }catch(e){ return null }
-  } || {
-    personal: { fullName:'', title:'', phone:'', email:'', address:'', summary:'' },
-    experiences: [ emptyExperience() ],
-    education: [ emptyEducation() ],
-    skills: [],
-    languages: [],
-    links: { portfolio:'', linkedin:'', github:'' },
-    custom: []
+    try{ 
+      const saved = JSON.parse(localStorage.getItem('resume:draft'))
+      return saved || {
+        personal: { fullName:'', title:'', phone:'', email:'', address:'', summary:'' },
+        experiences: [ emptyExperience() ],
+        education: [ emptyEducation() ],
+        skills: [],
+        languages: [],
+        links: { portfolio:'', linkedin:'', github:'' },
+        custom: []
+      }
+    }catch(e){ 
+      return {
+        personal: { fullName:'', title:'', phone:'', email:'', address:'', summary:'' },
+        experiences: [ emptyExperience() ],
+        education: [ emptyEducation() ],
+        skills: [],
+        languages: [],
+        links: { portfolio:'', linkedin:'', github:'' },
+        custom: []
+      }
+    }
   })
 
   useEffect(()=>{ localStorage.setItem('resume:draft', JSON.stringify(data)) }, [data])
