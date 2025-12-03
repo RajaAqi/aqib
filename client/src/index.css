@@ -18,3 +18,23 @@ html, body, #root { height: 100%; }
 /* Small template tweaks */
 .template-two-column { display: block }
 .template-minimal { color: #111827 }
+
+/* A4 print / export styles */
+@page { size: A4; margin: 12mm; }
+
+@media print {
+	.resume-container {
+		width: 210mm; /* A4 width */
+		min-height: 297mm; /* A4 height */
+		padding: 16mm;
+		box-shadow: none !important;
+		margin: 0 auto;
+		background: white !important;
+	}
+}
+
+/* Ensure exported PDF uses A4-like dimensions on screen preview */
+.resume-container {
+	width: 210mm;
+	max-width: 100%;
+}

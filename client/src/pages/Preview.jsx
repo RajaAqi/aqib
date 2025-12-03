@@ -16,7 +16,8 @@ export default function Preview(){
       filename:     `${(data?.personal?.fullName || 'resume').replace(/\s+/g,'_')}.pdf`,
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2, useCORS: true },
-      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      // Use A4 paper size for CV exports
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
     }
     try{
       html2pdf().set(opt).from(ref.current).save()

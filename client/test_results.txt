@@ -1,0 +1,38 @@
+================================================
+🧪 RESUME BUILDER - AUTOMATED QA TESTING
+================================================
+
+[0;34m═══════════════════════════════════════════[0m
+[0;34mTEST SUITE 1: Build Verification[0m
+[0;34m═══════════════════════════════════════════[0m
+
+Testing: Node modules installed ... [0;32m✅ PASS[0m
+Testing: App.jsx exists ... [0;32m✅ PASS[0m
+Testing: package.json exists ... [0;32m✅ PASS[0m
+
+[0;34m═══════════════════════════════════════════[0m
+[0;34mTEST SUITE 2: Page Files Existence[0m
+[0;34m═══════════════════════════════════════════[0m
+
+Testing: Home.jsx exists ... [0;32m✅ PASS[0m
+Testing: CreateResume.jsx exists ... [0;32m✅ PASS[0m
+Testing: TemplateSelection.jsx exists ... [0;32m✅ PASS[0m
+Testing: Preview.jsx exists ... [0;32m✅ PASS[0m
+Testing: Dashboard.jsx exists ... [0;32m✅ PASS[0m
+Testing: Settings.jsx exists ... [0;32m✅ PASS[0m
+Testing: Profile.jsx exists ... [0;32m✅ PASS[0m
+Testing: Help.jsx exists ... [0;32m✅ PASS[0m
+
+[0;34m═══════════════════════════════════════════[0m
+[0;34mTEST SUITE 3: Component Files[0m
+[0;34m═══════════════════════════════════════════[0m
+
+Testing: Navbar.jsx exists ... [0;32m✅ PASS[0m
+Testing: Footer.jsx exists ... [0;32m✅ PASS[0m
+Testing: ResumePreview.jsx exists ... [0;32m✅ PASS[0m
+
+[0;34m═══════════════════════════════════════════[0m
+[0;34mTEST SUITE 4: Code Quality Checks[0m
+[0;34m═══════════════════════════════════════════[0m
+
+Testing: App.jsx syntax valid ... 
